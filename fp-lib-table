@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "CustomTweaks") (type "KiCad") (uri "${KIPRJMOD}/CustomTweaks.pretty") (options "") (descr ""))
+)
