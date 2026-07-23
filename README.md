@@ -32,4 +32,4 @@ The BuuKeeb™®© features:
 ### Special Thanks:
 
 - [BigBass](https://github.com/bigbass1997) for helping me out with a bunch KiCad questions
-- [Keyboard Atlier Discord Community](https://kbatelier.org/) for helping me and doing a keyboard review. Specific shoutouts to Quark, Indeed, Moo, and The Great Advisor Xaetral™.
+- [Keyboard Atlier Discord Community](https://kbatelier.org/) for helping me and doing a keyboard review. Specific shoutouts to Quark, Indeed, Moo, and The Great Advisor Xaetral™ for answering general questions. Another big thanks to cadiremar, galile0, and Jubakuba for the keyboard review.
