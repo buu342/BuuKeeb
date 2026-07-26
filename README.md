@@ -14,6 +14,7 @@ I saw a Glorious PC GMMK Barebones Keyboard for 30€ which seemed to check all 
 The BuuKeeb™®© features:
 - 105 keys with ISO enter for the 0.01% population of the world who types on a Portuguese layout
 - Hotswappable MX switches
+- N-Key Rollover
 - Per Key LEDs on the top side, individually addressible
 - STM32 MCU for QMK support
 - LED indicators for Caps Lock, Numlock, and Scroll Lock (incredible feature, I know)
