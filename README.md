@@ -23,7 +23,6 @@ The BuuKeeb™®© features:
 
 ### TODO:
 
-- Review the board and schematics
 - Send the board off to fabrication via JLCPCB
 - Purchase all the components
 - Solder everything together

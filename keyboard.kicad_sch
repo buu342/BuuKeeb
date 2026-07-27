@@ -6730,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470R"
 			(at 148.844 176.276 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8140,7 +8140,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c977696-6c25-4565-bebd-4daa2f13d462")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 194.31 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8211,7 +8211,7 @@
 		(instances
 			(project "keyboard"
 				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9785,7 +9785,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1K"
 			(at 118.11 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10480,7 +10480,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1K"
 			(at 110.49 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
