@@ -3956,6 +3956,16 @@
 		)
 		(uuid "2e6d83d6-3d16-4ffa-8c9e-0816dbb5c7b6")
 	)
+	(polyline
+		(pts
+			(xy 160.02 172.72) (xy 161.29 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e852e94-361e-4bc5-8526-f5daef03ba4f")
+	)
 	(wire
 		(pts
 			(xy 110.49 171.45) (xy 114.3 171.45)
@@ -3965,6 +3975,16 @@
 			(type default)
 		)
 		(uuid "30a4b2a4-3078-4c69-b5e2-63eab9c6bde4")
+	)
+	(polyline
+		(pts
+			(xy 158.75 171.45) (xy 160.02 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310dccf8-4a85-466a-9c27-648040b78f62")
 	)
 	(wire
 		(pts
@@ -4148,7 +4168,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 171.45) (xy 147.32 171.45)
+			(xy 142.24 171.45) (xy 144.78 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4375,6 +4395,26 @@
 			(type default)
 		)
 		(uuid "8cab80f0-8e64-4696-ae92-7fc9fce679dd")
+	)
+	(polyline
+		(pts
+			(xy 160.02 170.18) (xy 161.29 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d2da085-4852-489b-bfd8-e495fdb6131f")
+	)
+	(wire
+		(pts
+			(xy 153.67 171.45) (xy 152.4 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b102cb-56eb-46b7-ac32-13681a2d201a")
 	)
 	(polyline
 		(pts
@@ -4675,6 +4715,16 @@
 			(type default)
 		)
 		(uuid "e5ab5919-cc67-4639-924f-906e18eb4b16")
+	)
+	(polyline
+		(pts
+			(xy 158.75 171.45) (xy 160.02 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e642ab1b-0e9a-4ced-9c35-dda05947ef67")
 	)
 	(polyline
 		(pts
@@ -5436,7 +5486,7 @@
 	)
 	(global_label "LED"
 		(shape output)
-		(at 154.94 171.45 0)
+		(at 153.67 171.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5446,7 +5496,7 @@
 		)
 		(uuid "79d4c72e-082f-4451-bcb7-9f9ccee41b56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.3723 171.45 0)
+			(at 160.1023 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6661,7 +6711,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 171.45 90)
+		(at 148.59 171.45 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6671,7 +6721,7 @@
 		(dnp no)
 		(uuid "09e64f8f-9481-4108-a291-0e2ffe0520a0")
 		(property "Reference" "R2"
-			(at 151.384 173.99 90)
+			(at 148.844 173.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6681,7 +6731,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 151.384 176.276 90)
+			(at 148.844 176.276 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6691,7 +6741,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 151.13 173.228 90)
+			(at 148.59 173.228 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6702,7 +6752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 171.45 0)
+			(at 148.59 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6713,7 +6763,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 151.13 171.45 0)
+			(at 148.59 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
