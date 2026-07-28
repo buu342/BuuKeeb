@@ -3487,6 +3487,17 @@
 		)
 		(uuid "177dd087-68bc-40c4-85b4-eb35f945690b")
 	)
+	(text "The original keyboard has 6 mounting holes\nso I've included them here."
+		(exclude_from_sim no)
+		(at 213.614 136.144 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23d3dc7a-7992-490b-acca-cd5d8fd01751")
+	)
 	(text "STM32"
 		(exclude_from_sim no)
 		(at 28.702 20.066 0)
@@ -3589,6 +3600,12 @@
 		(uuid "1fe96f0d-ae33-4cd4-8777-14961568968e")
 	)
 	(junction
+		(at 226.06 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4990452a-f125-47fd-810e-dcf11b201ab7")
+	)
+	(junction
 		(at 130.81 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3613,7 +3630,7 @@
 		(uuid "56ca08d6-1ca5-4f79-b6bc-19eb283e593f")
 	)
 	(junction
-		(at 213.36 68.58)
+		(at 213.36 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64e55abd-79c8-48bb-9256-f8445c8cbbf0")
@@ -3655,12 +3672,6 @@
 		(uuid "94a20856-3b2e-424f-80c1-d60acb12cc9f")
 	)
 	(junction
-		(at 226.06 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95519367-d488-4cd6-98c3-92fe087006a6")
-	)
-	(junction
 		(at 116.84 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3685,7 +3696,7 @@
 		(uuid "cdb53d72-3d19-4cf8-95fc-700c2fbbd063")
 	)
 	(junction
-		(at 204.47 68.58)
+		(at 204.47 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d17068e8-520a-49ca-9289-700bc7f165bf")
@@ -4258,7 +4269,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 68.58) (xy 226.06 68.58)
+			(xy 223.52 58.42) (xy 226.06 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4318,7 +4329,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 68.58) (xy 204.47 68.58)
+			(xy 199.39 58.42) (xy 204.47 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4488,7 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 68.58) (xy 213.36 68.58)
+			(xy 204.47 58.42) (xy 213.36 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4598,7 +4609,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 68.58) (xy 215.9 68.58)
+			(xy 213.36 58.42) (xy 215.9 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4678,7 +4689,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 60.96) (xy 199.39 60.96)
+			(xy 210.82 66.04) (xy 199.39 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4837,7 +4848,7 @@
 		(uuid "fe8a7bd0-aba3-450b-9155-836c9cff5dad")
 	)
 	(global_label "Col14"
-		(shape input)
+		(shape output)
 		(at 67.31 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4885,7 +4896,7 @@
 		)
 	)
 	(global_label "Col02"
-		(shape input)
+		(shape output)
 		(at 36.83 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4909,7 +4920,7 @@
 		)
 	)
 	(global_label "Col21"
-		(shape output)
+		(shape input)
 		(at 67.31 73.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4981,7 +4992,7 @@
 		)
 	)
 	(global_label "Col11"
-		(shape input)
+		(shape output)
 		(at 59.69 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5029,7 +5040,7 @@
 		)
 	)
 	(global_label "Col03"
-		(shape input)
+		(shape output)
 		(at 39.37 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5054,7 +5065,7 @@
 	)
 	(global_label "DIn+"
 		(shape bidirectional)
-		(at 210.82 60.96 0)
+		(at 210.82 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5064,7 +5075,7 @@
 		)
 		(uuid "26689da6-d434-497b-a348-a9b05eab36fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.5127 60.96 0)
+			(at 219.5127 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5077,7 +5088,7 @@
 		)
 	)
 	(global_label "Col09"
-		(shape output)
+		(shape input)
 		(at 31.75 68.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5125,7 +5136,7 @@
 		)
 	)
 	(global_label "Col18"
-		(shape output)
+		(shape input)
 		(at 31.75 114.3 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5149,7 +5160,7 @@
 		)
 	)
 	(global_label "Col01"
-		(shape input)
+		(shape output)
 		(at 34.29 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5172,32 +5183,8 @@
 			)
 		)
 	)
-	(global_label "D+"
-		(shape bidirectional)
-		(at 67.31 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3a712c42-2d40-436a-887a-6cbaf0d9a79e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.2489 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Col13"
-		(shape output)
+		(shape input)
 		(at 67.31 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5245,7 +5232,7 @@
 		)
 	)
 	(global_label "Col01"
-		(shape output)
+		(shape input)
 		(at 31.75 104.14 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5269,7 +5256,7 @@
 		)
 	)
 	(global_label "Col12"
-		(shape output)
+		(shape input)
 		(at 31.75 60.96 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5317,7 +5304,7 @@
 		)
 	)
 	(global_label "Col16"
-		(shape output)
+		(shape input)
 		(at 31.75 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5341,7 +5328,7 @@
 		)
 	)
 	(global_label "Col15"
-		(shape output)
+		(shape input)
 		(at 31.75 106.68 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5364,8 +5351,32 @@
 			)
 		)
 	)
+	(global_label "D+"
+		(shape bidirectional)
+		(at 67.31 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f68f6d6-234c-4be6-ba5c-548a1924d1b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.2489 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "Col06"
-		(shape output)
+		(shape input)
 		(at 67.31 66.04 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5389,7 +5400,7 @@
 		)
 	)
 	(global_label "Col21"
-		(shape input)
+		(shape output)
 		(at 85.09 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5413,7 +5424,7 @@
 		)
 	)
 	(global_label "Col13"
-		(shape input)
+		(shape output)
 		(at 64.77 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5509,7 +5520,7 @@
 		)
 	)
 	(global_label "Col20"
-		(shape output)
+		(shape input)
 		(at 67.31 71.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5557,7 +5568,7 @@
 		)
 	)
 	(global_label "Col17"
-		(shape output)
+		(shape input)
 		(at 31.75 111.76 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5577,6 +5588,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "D-"
+		(shape bidirectional)
+		(at 67.31 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c1b988b-9741-4862-92dc-24b3d7e2c0f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.2489 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -5605,7 +5640,7 @@
 		)
 	)
 	(global_label "Col10"
-		(shape output)
+		(shape input)
 		(at 31.75 71.12 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5629,7 +5664,7 @@
 		)
 	)
 	(global_label "Col05"
-		(shape input)
+		(shape output)
 		(at 44.45 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5653,7 +5688,7 @@
 		)
 	)
 	(global_label "Col15"
-		(shape input)
+		(shape output)
 		(at 69.85 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5677,7 +5712,7 @@
 		)
 	)
 	(global_label "Col19"
-		(shape output)
+		(shape input)
 		(at 67.31 68.58 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5749,7 +5784,7 @@
 		)
 	)
 	(global_label "Col12"
-		(shape input)
+		(shape output)
 		(at 62.23 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5773,7 +5808,7 @@
 		)
 	)
 	(global_label "Col14"
-		(shape output)
+		(shape input)
 		(at 67.31 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5797,7 +5832,7 @@
 		)
 	)
 	(global_label "Col17"
-		(shape input)
+		(shape output)
 		(at 74.93 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5821,7 +5856,7 @@
 		)
 	)
 	(global_label "Col07"
-		(shape output)
+		(shape input)
 		(at 67.31 63.5 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5869,7 +5904,7 @@
 		)
 	)
 	(global_label "Col08"
-		(shape output)
+		(shape input)
 		(at 31.75 66.04 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5893,7 +5928,7 @@
 		)
 	)
 	(global_label "Col04"
-		(shape input)
+		(shape output)
 		(at 41.91 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5917,7 +5952,7 @@
 		)
 	)
 	(global_label "Col18"
-		(shape input)
+		(shape output)
 		(at 77.47 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5941,7 +5976,7 @@
 		)
 	)
 	(global_label "Col03"
-		(shape output)
+		(shape input)
 		(at 31.75 81.28 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5989,7 +6024,7 @@
 		)
 	)
 	(global_label "Col19"
-		(shape input)
+		(shape output)
 		(at 80.01 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6037,7 +6072,7 @@
 		)
 	)
 	(global_label "Col02"
-		(shape output)
+		(shape input)
 		(at 31.75 101.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6085,7 +6120,7 @@
 		)
 	)
 	(global_label "Col05"
-		(shape output)
+		(shape input)
 		(at 31.75 76.2 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6109,7 +6144,7 @@
 		)
 	)
 	(global_label "Col20"
-		(shape input)
+		(shape output)
 		(at 82.55 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6157,7 +6192,7 @@
 		)
 	)
 	(global_label "Col09"
-		(shape input)
+		(shape output)
 		(at 54.61 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6181,7 +6216,7 @@
 		)
 	)
 	(global_label "Col07"
-		(shape input)
+		(shape output)
 		(at 49.53 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6205,7 +6240,7 @@
 		)
 	)
 	(global_label "Col08"
-		(shape input)
+		(shape output)
 		(at 52.07 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6277,7 +6312,7 @@
 		)
 	)
 	(global_label "Col04"
-		(shape output)
+		(shape input)
 		(at 31.75 78.74 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6325,7 +6360,7 @@
 		)
 	)
 	(global_label "Col11"
-		(shape output)
+		(shape input)
 		(at 31.75 58.42 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6372,32 +6407,8 @@
 			)
 		)
 	)
-	(global_label "D-"
-		(shape bidirectional)
-		(at 67.31 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f14876a9-fd13-4433-a3fc-69a703d23439")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.2489 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Col16"
-		(shape input)
+		(shape output)
 		(at 72.39 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6421,7 +6432,7 @@
 		)
 	)
 	(global_label "Col10"
-		(shape input)
+		(shape output)
 		(at 57.15 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6445,7 +6456,7 @@
 		)
 	)
 	(global_label "Col06"
-		(shape input)
+		(shape output)
 		(at 46.99 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6870,7 +6881,8 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 226.06 68.58 180)
+		(at 226.06 58.42 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6881,7 +6893,7 @@
 		(fields_autoplaced yes)
 		(uuid "231d8355-fe4c-49b3-87b7-9b6637ec2f6d")
 		(property "Reference" "#PWR09"
-			(at 226.06 64.77 0)
+			(at 226.06 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6892,7 +6904,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 226.06 73.66 0)
+			(at 226.06 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6902,7 +6914,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 68.58 0)
+			(at 226.06 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6913,7 +6925,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 68.58 0)
+			(at 226.06 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6924,7 +6936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 226.06 68.58 0)
+			(at 226.06 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7739,7 +7751,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 66.04 90)
+		(at 199.39 60.96 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7750,7 +7763,7 @@
 		(fields_autoplaced yes)
 		(uuid "635483bc-2639-415f-91b3-c67bf99117ec")
 		(property "Reference" "#PWR011"
-			(at 205.74 66.04 0)
+			(at 205.74 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7761,7 +7774,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 66.0399 90)
+			(at 203.2 60.9601 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7772,7 +7785,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 66.04 0)
+			(at 199.39 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7783,7 +7796,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 66.04 0)
+			(at 199.39 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7794,7 +7807,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 66.04 0)
+			(at 199.39 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7896,7 +7909,8 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 213.36 68.58 180)
+		(at 213.36 58.42 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7907,7 +7921,7 @@
 		(fields_autoplaced yes)
 		(uuid "6926bc5a-2c69-4d44-a00b-fa79613b6f9b")
 		(property "Reference" "#PWR08"
-			(at 213.36 64.77 0)
+			(at 213.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7918,7 +7932,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 213.36 73.66 0)
+			(at 213.36 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7928,7 +7942,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 68.58 0)
+			(at 213.36 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7939,7 +7953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 68.58 0)
+			(at 213.36 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7950,7 +7964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 213.36 68.58 0)
+			(at 213.36 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7974,7 +7988,8 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 219.71 68.58 90)
+		(at 219.71 58.42 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7984,7 +7999,7 @@
 		(dnp no)
 		(uuid "6d9afbec-5df0-4ca1-8b87-fefcaa75d65f")
 		(property "Reference" "F1"
-			(at 219.964 71.628 90)
+			(at 219.964 55.372 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7994,7 +8009,7 @@
 			)
 		)
 		(property "Value" "500mA"
-			(at 219.964 73.914 90)
+			(at 219.964 53.086 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8004,7 +8019,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
-			(at 219.71 70.358 90)
+			(at 219.71 56.642 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8015,7 +8030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 68.58 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8026,7 +8041,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 219.71 68.58 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8046,6 +8061,83 @@
 			(project "keyboard"
 				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 226.06 58.42 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7803b162-96ee-4a6c-9c44-9e13f5a330ea")
+		(property "Reference" "#FLG03"
+			(at 226.06 60.325 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 226.06 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 226.06 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3265fba-b77e-49e8-8deb-b469c7e45f22")
+		)
+		(instances
+			(project "keyboard"
+				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -8131,7 +8223,6 @@
 	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 194.31 63.5 0)
-		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8141,7 +8232,7 @@
 		(dnp no)
 		(uuid "7c977696-6c25-4565-bebd-4daa2f13d462")
 		(property "Reference" "J1"
-			(at 194.31 55.88 0)
+			(at 194.31 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8151,7 +8242,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 194.31 53.34 0)
+			(at 194.31 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9116,7 +9207,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 58.42 90)
+		(at 199.39 68.58 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9127,7 +9219,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0de1398-f0a9-4911-9c42-42ca6c01f68b")
 		(property "Reference" "#PWR019"
-			(at 205.74 58.42 0)
+			(at 205.74 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9138,7 +9230,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 58.4199 90)
+			(at 203.2 68.5801 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9149,7 +9241,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 58.42 0)
+			(at 199.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9160,7 +9252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 58.42 0)
+			(at 199.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9171,7 +9263,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 58.42 0)
+			(at 199.39 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10225,84 +10317,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 226.06 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3129ec2-1f3e-423e-91f3-bc6e49c7da92")
-		(property "Reference" "#FLG03"
-			(at 226.06 66.675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 226.06 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 226.06 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9bfa0478-cf54-4178-870a-89173d8863bc")
-		)
-		(instances
-			(project "keyboard"
-				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 90.17 64.77 0)
 		(unit 1)
@@ -10382,7 +10396,8 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 204.47 68.58 180)
+		(at 204.47 58.42 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10393,7 +10408,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7396e81-1e00-4417-a84d-51381dd09c7b")
 		(property "Reference" "#FLG02"
-			(at 204.47 70.485 0)
+			(at 204.47 56.515 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10404,7 +10419,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 204.47 73.66 0)
+			(at 204.47 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10414,7 +10429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 68.58 0)
+			(at 204.47 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10425,7 +10440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 68.58 0)
+			(at 204.47 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10436,7 +10451,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 204.47 68.58 0)
+			(at 204.47 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10793,7 +10808,7 @@
 				(justify left)
 			)
 		)
-		(pin "Col06" input
+		(pin "Col06" output
 			(at 46.99 151.13 90)
 			(uuid "9ed6489d-03c8-4800-9a5b-e99d5e246aae")
 			(effects
@@ -10803,7 +10818,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col15" input
+		(pin "Col15" output
 			(at 69.85 151.13 90)
 			(uuid "e317e2f4-092d-49e1-8cff-3ab01bb80d29")
 			(effects
@@ -10813,7 +10828,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col18" input
+		(pin "Col18" output
 			(at 77.47 151.13 90)
 			(uuid "b0f2b7de-f50f-4e5a-8ba7-7562ddb2714a")
 			(effects
@@ -10823,7 +10838,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col13" input
+		(pin "Col13" output
 			(at 64.77 151.13 90)
 			(uuid "1d853682-8194-4f65-b882-00a99c0bf91f")
 			(effects
@@ -10833,7 +10848,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col21" input
+		(pin "Col21" output
 			(at 85.09 151.13 90)
 			(uuid "f4b8d12c-c502-4c81-a994-24eba8e1a2b9")
 			(effects
@@ -10843,7 +10858,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col11" input
+		(pin "Col11" output
 			(at 59.69 151.13 90)
 			(uuid "69d0b098-552c-4d2f-a484-833d58df66ec")
 			(effects
@@ -10853,7 +10868,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col09" input
+		(pin "Col09" output
 			(at 54.61 151.13 90)
 			(uuid "a5e2505f-e167-4817-a59f-317ab1bc602b")
 			(effects
@@ -10863,7 +10878,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col10" input
+		(pin "Col10" output
 			(at 57.15 151.13 90)
 			(uuid "39063fa0-c772-40da-abf9-06b34645c089")
 			(effects
@@ -10873,7 +10888,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col19" input
+		(pin "Col19" output
 			(at 80.01 151.13 90)
 			(uuid "79aa947d-1e24-40c2-9949-b084ba539e04")
 			(effects
@@ -10883,7 +10898,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col05" input
+		(pin "Col05" output
 			(at 44.45 151.13 90)
 			(uuid "a8da621e-538a-4649-bd56-4ba09fdc3599")
 			(effects
@@ -10893,7 +10908,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col03" input
+		(pin "Col03" output
 			(at 39.37 151.13 90)
 			(uuid "538bd1dc-0ace-472f-a3ac-3a073b87649a")
 			(effects
@@ -10903,7 +10918,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col08" input
+		(pin "Col08" output
 			(at 52.07 151.13 90)
 			(uuid "202ef0ae-1906-44de-8e66-939d2e96a940")
 			(effects
@@ -10913,7 +10928,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col02" input
+		(pin "Col02" output
 			(at 36.83 151.13 90)
 			(uuid "c1d47314-ea79-4d45-9183-3c5d84f1d348")
 			(effects
@@ -10923,7 +10938,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col12" input
+		(pin "Col12" output
 			(at 62.23 151.13 90)
 			(uuid "7542f690-7ede-4b46-b5d7-b0857bbc3c70")
 			(effects
@@ -10933,7 +10948,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col16" input
+		(pin "Col16" output
 			(at 72.39 151.13 90)
 			(uuid "43f23ae2-3112-46fd-bb81-6e578f4faaac")
 			(effects
@@ -10943,7 +10958,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col07" input
+		(pin "Col07" output
 			(at 49.53 151.13 90)
 			(uuid "17550785-173e-4da1-8646-05c17d8c4bb7")
 			(effects
@@ -10953,7 +10968,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col01" input
+		(pin "Col01" output
 			(at 34.29 151.13 90)
 			(uuid "a84b3984-26e5-452a-86dc-da5b317e4e8f")
 			(effects
@@ -10963,7 +10978,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col04" input
+		(pin "Col04" output
 			(at 41.91 151.13 90)
 			(uuid "5d9fae35-bdc9-4d1c-8508-71ecfe1532f9")
 			(effects
@@ -10973,7 +10988,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col14" input
+		(pin "Col14" output
 			(at 67.31 151.13 90)
 			(uuid "d9b7c63f-ca64-4195-98c4-d7702568fd76")
 			(effects
@@ -10983,7 +10998,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col17" input
+		(pin "Col17" output
 			(at 74.93 151.13 90)
 			(uuid "90cfb623-029b-4fc7-bef4-960b71ec6c65")
 			(effects
@@ -10993,7 +11008,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col20" input
+		(pin "Col20" output
 			(at 82.55 151.13 90)
 			(uuid "50b4e0af-446e-4b7d-a59a-6239be5d5431")
 			(effects

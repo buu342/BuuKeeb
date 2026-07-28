@@ -676,7 +676,7 @@
         "uuid": "16cf91c7-4491-4cad-ace1-664941c2385a"
       }
     ],
-    "used_designators": "D106-212,C10-126,LED1,R2,J2,#PWR8-11,#PWR17-138,F1,Q1,U2,U5,#FLG1-3,H1-6",
+    "used_designators": "D106-212,C10-127,LED1,R2,J2,#PWR8-11,#PWR17-140,F1,Q1,U2,U5,#FLG1-3,H1-6",
     "variants": []
   },
   "sheets": [

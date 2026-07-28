@@ -19,7 +19,9 @@ The BuuKeeb™®© features:
 - STM32 MCU for QMK support
 - LED indicators for Caps Lock, Numlock, and Scroll Lock (incredible feature, I know)
 - My face on the keyboard for added narcissism
-- Functional. Probably.
+- Functional. Probably
+
+The design uses [marbastlib](https://github.com/ebastler/marbastlib) for some components so make sure you have that installed before opening the project in KiCad.
 
 ### TODO:
 
