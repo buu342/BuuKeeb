@@ -657,6 +657,14 @@
       "version": 1
     },
     "net_format_name": "KiCad",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -676,7 +684,7 @@
         "uuid": "16cf91c7-4491-4cad-ace1-664941c2385a"
       }
     ],
-    "used_designators": "D106-212,C10-127,LED1,R2,J2,#PWR8-11,#PWR17-140,F1,Q1,U2,U5,#FLG1-3,H1-6",
+    "used_designators": "SW2,MX106-210,D106-212,C10-236,LED1,LED109-228,R2-3,R5-6,J2,#PWR8-11,#PWR17-257,F1,Q1,U2,U5-6,#FLG1-4,H1-6",
     "variants": []
   },
   "sheets": [

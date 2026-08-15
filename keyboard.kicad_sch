@@ -3618,10 +3618,10 @@
 		(uuid "4a8276f3-8ca5-469d-a3fb-e10ad5c1e9bf")
 	)
 	(junction
-		(at 50.8 124.46)
+		(at 50.8 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "53ab9071-13aa-4b90-8ac3-71d5dc71f61f")
+		(uuid "533fb592-f482-499b-bc9e-542f07acf819")
 	)
 	(junction
 		(at 102.87 105.41)
@@ -3684,6 +3684,12 @@
 		(uuid "b3a43f25-3112-48f8-a99a-d24c77cba74e")
 	)
 	(junction
+		(at 208.28 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b49aa078-7d0d-4381-9bd8-7dc38bab4184")
+	)
+	(junction
 		(at 102.87 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3718,12 +3724,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb22d93b-b7b0-46a4-b72a-159fb7efa164")
-	)
-	(junction
-		(at 50.8 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f138d6c0-fbf8-4e86-a7ce-a394796dc4f1")
 	)
 	(no_connect
 		(at 189.23 147.32)
@@ -4107,16 +4107,6 @@
 		)
 		(uuid "411a44e8-ea59-4b59-baa6-962bf79efb98")
 	)
-	(wire
-		(pts
-			(xy 50.8 121.92) (xy 50.8 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "413806d1-7715-43d4-b486-80ccb6050dc3")
-	)
 	(polyline
 		(pts
 			(xy 240.03 60.96) (xy 278.13 60.96)
@@ -4397,6 +4387,16 @@
 		)
 		(uuid "88b32559-8220-42de-8208-c07cadb2a3cc")
 	)
+	(wire
+		(pts
+			(xy 208.28 68.58) (xy 199.39 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "892beaf1-6c4b-4d95-bb08-ba893a15e828")
+	)
 	(polyline
 		(pts
 			(xy 181.61 25.4) (xy 181.61 102.87)
@@ -4476,6 +4476,16 @@
 			(type default)
 		)
 		(uuid "9f775cb5-c66d-4693-87be-a4fe3a2bf3c1")
+	)
+	(wire
+		(pts
+			(xy 209.55 68.58) (xy 208.28 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a62f97e4-dac6-45db-af0e-2226ec24ab0a")
 	)
 	(polyline
 		(pts
@@ -4819,7 +4829,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 127) (xy 50.8 124.46)
+			(xy 50.8 121.92) (xy 50.8 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4848,7 +4858,7 @@
 		(uuid "fe8a7bd0-aba3-450b-9155-836c9cff5dad")
 	)
 	(global_label "Col14"
-		(shape output)
+		(shape input)
 		(at 67.31 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4872,7 +4882,7 @@
 		)
 	)
 	(global_label "Row4"
-		(shape input)
+		(shape output)
 		(at 24.13 167.64 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4896,7 +4906,7 @@
 		)
 	)
 	(global_label "Col02"
-		(shape output)
+		(shape input)
 		(at 36.83 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -4920,7 +4930,7 @@
 		)
 	)
 	(global_label "Col21"
-		(shape input)
+		(shape output)
 		(at 67.31 73.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4944,7 +4954,7 @@
 		)
 	)
 	(global_label "Row6"
-		(shape output)
+		(shape input)
 		(at 67.31 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4968,7 +4978,7 @@
 		)
 	)
 	(global_label "Row3"
-		(shape input)
+		(shape output)
 		(at 24.13 165.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4992,7 +5002,7 @@
 		)
 	)
 	(global_label "Col11"
-		(shape output)
+		(shape input)
 		(at 59.69 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5040,7 +5050,7 @@
 		)
 	)
 	(global_label "Col03"
-		(shape output)
+		(shape input)
 		(at 39.37 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5088,7 +5098,7 @@
 		)
 	)
 	(global_label "Col09"
-		(shape input)
+		(shape output)
 		(at 31.75 68.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5112,7 +5122,7 @@
 		)
 	)
 	(global_label "Row5"
-		(shape input)
+		(shape output)
 		(at 24.13 170.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5136,7 +5146,7 @@
 		)
 	)
 	(global_label "Col18"
-		(shape input)
+		(shape output)
 		(at 31.75 114.3 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5160,7 +5170,7 @@
 		)
 	)
 	(global_label "Col01"
-		(shape output)
+		(shape input)
 		(at 34.29 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5184,7 +5194,7 @@
 		)
 	)
 	(global_label "Col13"
-		(shape input)
+		(shape output)
 		(at 67.31 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5208,7 +5218,7 @@
 		)
 	)
 	(global_label "Row1"
-		(shape input)
+		(shape output)
 		(at 24.13 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5232,7 +5242,7 @@
 		)
 	)
 	(global_label "Col01"
-		(shape input)
+		(shape output)
 		(at 31.75 104.14 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5256,7 +5266,7 @@
 		)
 	)
 	(global_label "Col12"
-		(shape input)
+		(shape output)
 		(at 31.75 60.96 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5280,7 +5290,7 @@
 		)
 	)
 	(global_label "Row5"
-		(shape output)
+		(shape input)
 		(at 31.75 91.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5304,7 +5314,7 @@
 		)
 	)
 	(global_label "Col16"
-		(shape input)
+		(shape output)
 		(at 31.75 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5328,7 +5338,7 @@
 		)
 	)
 	(global_label "Col15"
-		(shape input)
+		(shape output)
 		(at 31.75 106.68 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5376,7 +5386,7 @@
 		)
 	)
 	(global_label "Col06"
-		(shape input)
+		(shape output)
 		(at 67.31 66.04 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5400,7 +5410,7 @@
 		)
 	)
 	(global_label "Col21"
-		(shape output)
+		(shape input)
 		(at 85.09 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5424,7 +5434,7 @@
 		)
 	)
 	(global_label "Col13"
-		(shape output)
+		(shape input)
 		(at 64.77 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5448,7 +5458,7 @@
 		)
 	)
 	(global_label "Row1"
-		(shape output)
+		(shape input)
 		(at 67.31 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5472,7 +5482,7 @@
 		)
 	)
 	(global_label "Row2"
-		(shape output)
+		(shape input)
 		(at 31.75 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5520,7 +5530,7 @@
 		)
 	)
 	(global_label "Col20"
-		(shape input)
+		(shape output)
 		(at 67.31 71.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5568,7 +5578,7 @@
 		)
 	)
 	(global_label "Col17"
-		(shape input)
+		(shape output)
 		(at 31.75 111.76 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5640,7 +5650,7 @@
 		)
 	)
 	(global_label "Col10"
-		(shape input)
+		(shape output)
 		(at 31.75 71.12 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5664,7 +5674,7 @@
 		)
 	)
 	(global_label "Col05"
-		(shape output)
+		(shape input)
 		(at 44.45 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5688,7 +5698,7 @@
 		)
 	)
 	(global_label "Col15"
-		(shape output)
+		(shape input)
 		(at 69.85 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5712,7 +5722,7 @@
 		)
 	)
 	(global_label "Col19"
-		(shape input)
+		(shape output)
 		(at 67.31 68.58 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5736,7 +5746,7 @@
 		)
 	)
 	(global_label "Row4"
-		(shape output)
+		(shape input)
 		(at 31.75 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5784,7 +5794,7 @@
 		)
 	)
 	(global_label "Col12"
-		(shape output)
+		(shape input)
 		(at 62.23 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5808,7 +5818,7 @@
 		)
 	)
 	(global_label "Col14"
-		(shape input)
+		(shape output)
 		(at 67.31 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5832,7 +5842,7 @@
 		)
 	)
 	(global_label "Col17"
-		(shape output)
+		(shape input)
 		(at 74.93 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5856,7 +5866,7 @@
 		)
 	)
 	(global_label "Col07"
-		(shape input)
+		(shape output)
 		(at 67.31 63.5 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5904,7 +5914,7 @@
 		)
 	)
 	(global_label "Col08"
-		(shape input)
+		(shape output)
 		(at 31.75 66.04 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5928,7 +5938,7 @@
 		)
 	)
 	(global_label "Col04"
-		(shape output)
+		(shape input)
 		(at 41.91 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5952,7 +5962,7 @@
 		)
 	)
 	(global_label "Col18"
-		(shape output)
+		(shape input)
 		(at 77.47 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5976,7 +5986,7 @@
 		)
 	)
 	(global_label "Col03"
-		(shape input)
+		(shape output)
 		(at 31.75 81.28 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6024,7 +6034,7 @@
 		)
 	)
 	(global_label "Col19"
-		(shape output)
+		(shape input)
 		(at 80.01 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6072,7 +6082,7 @@
 		)
 	)
 	(global_label "Col02"
-		(shape input)
+		(shape output)
 		(at 31.75 101.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6096,7 +6106,7 @@
 		)
 	)
 	(global_label "Row2"
-		(shape input)
+		(shape output)
 		(at 24.13 162.56 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6120,7 +6130,7 @@
 		)
 	)
 	(global_label "Col05"
-		(shape input)
+		(shape output)
 		(at 31.75 76.2 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6144,7 +6154,7 @@
 		)
 	)
 	(global_label "Col20"
-		(shape output)
+		(shape input)
 		(at 82.55 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6192,7 +6202,7 @@
 		)
 	)
 	(global_label "Col09"
-		(shape output)
+		(shape input)
 		(at 54.61 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6216,7 +6226,7 @@
 		)
 	)
 	(global_label "Col07"
-		(shape output)
+		(shape input)
 		(at 49.53 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6240,7 +6250,7 @@
 		)
 	)
 	(global_label "Col08"
-		(shape output)
+		(shape input)
 		(at 52.07 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6288,7 +6298,7 @@
 		)
 	)
 	(global_label "Row6"
-		(shape input)
+		(shape output)
 		(at 24.13 172.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6312,7 +6322,7 @@
 		)
 	)
 	(global_label "Col04"
-		(shape input)
+		(shape output)
 		(at 31.75 78.74 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6360,7 +6370,7 @@
 		)
 	)
 	(global_label "Col11"
-		(shape input)
+		(shape output)
 		(at 31.75 58.42 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6384,7 +6394,7 @@
 		)
 	)
 	(global_label "Row3"
-		(shape output)
+		(shape input)
 		(at 31.75 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6408,7 +6418,7 @@
 		)
 	)
 	(global_label "Col16"
-		(shape output)
+		(shape input)
 		(at 72.39 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6432,7 +6442,7 @@
 		)
 	)
 	(global_label "Col10"
-		(shape output)
+		(shape input)
 		(at 57.15 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6456,7 +6466,7 @@
 		)
 	)
 	(global_label "Col06"
-		(shape output)
+		(shape input)
 		(at 46.99 151.13 90)
 		(fields_autoplaced yes)
 		(effects
@@ -8144,83 +8154,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 50.8 124.46 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "78fb4108-9b14-4999-9ca2-9682ecb78942")
-		(property "Reference" "#FLG01"
-			(at 48.895 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 45.72 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4bd7782-caab-4893-ae0a-bc4fb8d87adb")
-		)
-		(instances
-			(project "keyboard"
-				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 194.31 63.5 0)
 		(unit 1)
@@ -9207,7 +9140,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 68.58 90)
+		(at 209.55 68.58 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -9219,7 +9152,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0de1398-f0a9-4911-9c42-42ca6c01f68b")
 		(property "Reference" "#PWR019"
-			(at 205.74 68.58 0)
+			(at 215.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9230,7 +9163,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 68.5801 90)
+			(at 213.36 68.5801 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9241,7 +9174,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 68.58 0)
+			(at 209.55 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9252,7 +9185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 68.58 0)
+			(at 209.55 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9263,7 +9196,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 68.58 0)
+			(at 209.55 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9458,7 +9391,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 127 0)
+		(at 50.8 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9469,7 +9402,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb0faee8-4c3f-4c22-b89a-5c9c35992264")
 		(property "Reference" "#PWR01"
-			(at 50.8 133.35 0)
+			(at 50.8 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9480,7 +9413,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 128.2699 0)
+			(at 53.34 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9491,7 +9424,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 127 0)
+			(at 50.8 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9502,7 +9435,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 127 0)
+			(at 50.8 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9513,7 +9446,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 127 0)
+			(at 50.8 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9807,7 +9740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 249.8852 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -9969,7 +9902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 270.2052 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10105,10 +10038,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d08778ed-06e8-4004-b66b-0aa5308c4734")
 		(property "Reference" "U1"
-			(at 54.2133 121.92 0)
+			(at 62.992 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10119,7 +10051,7 @@
 			)
 		)
 		(property "Value" "STM32F072C8Tx"
-			(at 54.2133 124.46 0)
+			(at 62.992 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10311,6 +10243,83 @@
 			(project "keyboard"
 				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 208.28 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4a40441-2ffa-4199-a306-c1fd34da1674")
+		(property "Reference" "#FLG01"
+			(at 208.28 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 208.28 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 208.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10cf2191-1666-4f36-9a77-5401a74f9a1b")
+		)
+		(instances
+			(project "keyboard"
+				(path "/16cf91c7-4491-4cad-ace1-664941c2385a"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -10748,7 +10757,7 @@
 				(justify left top)
 			)
 		)
-		(pin "Row2" input
+		(pin "Row2" output
 			(at 24.13 162.56 180)
 			(uuid "6cf74fdc-877e-4a02-b51d-b8461ea3c35c")
 			(effects
@@ -10758,7 +10767,7 @@
 				(justify left)
 			)
 		)
-		(pin "Row5" input
+		(pin "Row5" output
 			(at 24.13 170.18 180)
 			(uuid "e77fbcdb-4da6-4486-a42d-52a968af1489")
 			(effects
@@ -10768,7 +10777,7 @@
 				(justify left)
 			)
 		)
-		(pin "Row4" input
+		(pin "Row4" output
 			(at 24.13 167.64 180)
 			(uuid "4070ce6a-1ed7-4b65-9764-8f837df3e21c")
 			(effects
@@ -10778,7 +10787,7 @@
 				(justify left)
 			)
 		)
-		(pin "Row3" input
+		(pin "Row3" output
 			(at 24.13 165.1 180)
 			(uuid "f00a1692-4077-4884-bbaa-1f1a306e9c4f")
 			(effects
@@ -10788,7 +10797,7 @@
 				(justify left)
 			)
 		)
-		(pin "Row6" input
+		(pin "Row6" output
 			(at 24.13 172.72 180)
 			(uuid "e11310e1-f8b8-4709-996d-2ea2f4a4fe6a")
 			(effects
@@ -10798,7 +10807,7 @@
 				(justify left)
 			)
 		)
-		(pin "Row1" input
+		(pin "Row1" output
 			(at 24.13 160.02 180)
 			(uuid "8dabd079-857f-46a8-9531-01e535475a1e")
 			(effects
@@ -10808,7 +10817,7 @@
 				(justify left)
 			)
 		)
-		(pin "Col06" output
+		(pin "Col06" input
 			(at 46.99 151.13 90)
 			(uuid "9ed6489d-03c8-4800-9a5b-e99d5e246aae")
 			(effects
@@ -10818,7 +10827,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col15" output
+		(pin "Col15" input
 			(at 69.85 151.13 90)
 			(uuid "e317e2f4-092d-49e1-8cff-3ab01bb80d29")
 			(effects
@@ -10828,7 +10837,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col18" output
+		(pin "Col18" input
 			(at 77.47 151.13 90)
 			(uuid "b0f2b7de-f50f-4e5a-8ba7-7562ddb2714a")
 			(effects
@@ -10838,7 +10847,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col13" output
+		(pin "Col13" input
 			(at 64.77 151.13 90)
 			(uuid "1d853682-8194-4f65-b882-00a99c0bf91f")
 			(effects
@@ -10848,7 +10857,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col21" output
+		(pin "Col21" input
 			(at 85.09 151.13 90)
 			(uuid "f4b8d12c-c502-4c81-a994-24eba8e1a2b9")
 			(effects
@@ -10858,7 +10867,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col11" output
+		(pin "Col11" input
 			(at 59.69 151.13 90)
 			(uuid "69d0b098-552c-4d2f-a484-833d58df66ec")
 			(effects
@@ -10868,7 +10877,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col09" output
+		(pin "Col09" input
 			(at 54.61 151.13 90)
 			(uuid "a5e2505f-e167-4817-a59f-317ab1bc602b")
 			(effects
@@ -10878,7 +10887,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col10" output
+		(pin "Col10" input
 			(at 57.15 151.13 90)
 			(uuid "39063fa0-c772-40da-abf9-06b34645c089")
 			(effects
@@ -10888,7 +10897,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col19" output
+		(pin "Col19" input
 			(at 80.01 151.13 90)
 			(uuid "79aa947d-1e24-40c2-9949-b084ba539e04")
 			(effects
@@ -10898,7 +10907,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col05" output
+		(pin "Col05" input
 			(at 44.45 151.13 90)
 			(uuid "a8da621e-538a-4649-bd56-4ba09fdc3599")
 			(effects
@@ -10908,7 +10917,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col03" output
+		(pin "Col03" input
 			(at 39.37 151.13 90)
 			(uuid "538bd1dc-0ace-472f-a3ac-3a073b87649a")
 			(effects
@@ -10918,7 +10927,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col08" output
+		(pin "Col08" input
 			(at 52.07 151.13 90)
 			(uuid "202ef0ae-1906-44de-8e66-939d2e96a940")
 			(effects
@@ -10928,7 +10937,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col02" output
+		(pin "Col02" input
 			(at 36.83 151.13 90)
 			(uuid "c1d47314-ea79-4d45-9183-3c5d84f1d348")
 			(effects
@@ -10938,7 +10947,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col12" output
+		(pin "Col12" input
 			(at 62.23 151.13 90)
 			(uuid "7542f690-7ede-4b46-b5d7-b0857bbc3c70")
 			(effects
@@ -10948,7 +10957,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col16" output
+		(pin "Col16" input
 			(at 72.39 151.13 90)
 			(uuid "43f23ae2-3112-46fd-bb81-6e578f4faaac")
 			(effects
@@ -10958,7 +10967,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col07" output
+		(pin "Col07" input
 			(at 49.53 151.13 90)
 			(uuid "17550785-173e-4da1-8646-05c17d8c4bb7")
 			(effects
@@ -10968,7 +10977,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col01" output
+		(pin "Col01" input
 			(at 34.29 151.13 90)
 			(uuid "a84b3984-26e5-452a-86dc-da5b317e4e8f")
 			(effects
@@ -10978,7 +10987,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col04" output
+		(pin "Col04" input
 			(at 41.91 151.13 90)
 			(uuid "5d9fae35-bdc9-4d1c-8508-71ecfe1532f9")
 			(effects
@@ -10988,7 +10997,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col14" output
+		(pin "Col14" input
 			(at 67.31 151.13 90)
 			(uuid "d9b7c63f-ca64-4195-98c4-d7702568fd76")
 			(effects
@@ -10998,7 +11007,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col17" output
+		(pin "Col17" input
 			(at 74.93 151.13 90)
 			(uuid "90cfb623-029b-4fc7-bef4-960b71ec6c65")
 			(effects
@@ -11008,7 +11017,7 @@
 				(justify right)
 			)
 		)
-		(pin "Col20" output
+		(pin "Col20" input
 			(at 82.55 151.13 90)
 			(uuid "50b4e0af-446e-4b7d-a59a-6239be5d5431")
 			(effects
