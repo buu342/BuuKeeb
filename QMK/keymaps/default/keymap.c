@@ -7,6 +7,11 @@
 #include "ws2812.h"
 #include "helper.h"
 
+
+/*******************************************
+                   Macros
+*******************************************/
+
 // LED Indices
 #define LEDINDEX_NUMLOCK    2
 #define LEDINDEX_CAPSLOCK   1
@@ -21,6 +26,13 @@ static bool keylayer_erase_eeprom(bool activated, void *context);
 static bool keylayer_rgb_val_down(bool activated, void *context);
 static bool keylayer_rgb_val_up(bool activated, void *context);
 static bool keylayer_save_directmode(bool activated, void *context);
+
+
+/*******************************************
+               EEPROM Globals
+*******************************************/
+
+uint8_t saved_directrgb[RGB_MATRIX_LED_COUNT][3];
 
 
 /*******************************************
@@ -237,24 +249,41 @@ const key_override_t *key_overrides[] = {
     &altgr_pause,
 };
 
-uint8_t saved_directrgb[RGB_MATRIX_LED_COUNT][3];
+
+/*******************************************
+          Keyboard Initialization
+*******************************************/
+
+/*==============================
+    keyboard_post_init_user
+
+    Called when the keyboard initializes
+==============================*/
 
 void keyboard_post_init_user(void)
 {
+    // If the last mode we were using was OpenRGB's direct mode, load the per-key data from EEPROM
     if (rgb_matrix_get_mode() == RGB_MATRIX_CUSTOM_OPENRGB_SAVE_DIRECT)
-    {
-        eeconfig_read_user_datablock(
-            saved_directrgb,
-            0,
-            sizeof(saved_directrgb)
-        );
-    }
+        eeconfig_read_user_datablock(saved_directrgb, 0, sizeof(saved_directrgb));
 }
 
 
 /*******************************************
              Key Layers Actions
 *******************************************/
+
+/*==============================
+    keylayer_erase_eeprom
+
+    Callback function for AltGR + Esc
+
+    Erases the EEPROM
+
+    @param Whether the key was activated or deactivated
+    @param Context passed into the custom action (unused)
+    @return If you return false, the replacement key is not registered/unregistered as it would normally. 
+            Return true to register and unregister the override normally.
+==============================*/
 
 static bool keylayer_erase_eeprom(bool activated, void *context)
 {
@@ -263,12 +292,40 @@ static bool keylayer_erase_eeprom(bool activated, void *context)
     return false;
 }
 
+
+/*==============================
+    keylayer_rgb_val_down
+
+    Callback function for AltGR + F11
+
+    Lowers the backlight brightness
+
+    @param Whether the key was activated or deactivated
+    @param Context passed into the custom action (unused)
+    @return If you return false, the replacement key is not registered/unregistered as it would normally. 
+            Return true to register and unregister the override normally.
+==============================*/
+
 static bool keylayer_rgb_val_down(bool activated, void *context)
 {
     if (activated)
         rgb_matrix_decrease_val();
     return false;
 }
+
+
+/*==============================
+    keylayer_rgb_val_up
+
+    Callback function for AltGR + F12
+
+    Increases the backlight brightness
+
+    @param Whether the key was activated or deactivated
+    @param Context passed into the custom action (unused)
+    @return If you return false, the replacement key is not registered/unregistered as it would normally. 
+            Return true to register and unregister the override normally.
+==============================*/
 
 static bool keylayer_rgb_val_up(bool activated, void *context)
 {
@@ -277,11 +334,27 @@ static bool keylayer_rgb_val_up(bool activated, void *context)
     return false;
 }
 
+
+/*==============================
+    keylayer_save_directmode
+
+    Callback function for Ctrl + AltGR + ESC
+
+    Saves the direct mode per-key RGB data to EEPROM
+
+    @param Whether the key was activated or deactivated
+    @param Context passed into the custom action (unused)
+    @return If you return false, the replacement key is not registered/unregistered as it would normally. 
+            Return true to register and unregister the override normally.
+==============================*/
+
 static bool keylayer_save_directmode(bool activated, void *context)
 {
     if (activated)
     {
         uint8_t mode = rgb_matrix_get_mode();
+
+        // Only save if the keyboard was in Direct Mode in OpenRGB
         if (mode == RGB_MATRIX_COMMUNITY_MODULE_OPENRGB_DIRECT)
         {
             // Fetch per key RGB data
@@ -312,39 +385,63 @@ static bool keylayer_save_directmode(bool activated, void *context)
 
 extern ws2812_led_t ws2812_leds[];
 
+
+/*==============================
+    enable_ledindicator
+
+    Enables a specific status LED.
+
+    @param The index of the LED to modify
+==============================*/
+
 static void enable_ledindicator(uint32_t index)
 {
     rgb_t rgb;
     hsv_t hsv;
     uint8_t mode = rgb_matrix_get_mode();
-    if (mode == RGB_MATRIX_COMMUNITY_MODULE_OPENRGB_DIRECT)
+
+    // Get the HSV data depending on the effect that's active
+    if (mode == RGB_MATRIX_COMMUNITY_MODULE_OPENRGB_DIRECT) // Using OpenRGB's direct mode LED data
     {
         rgb.r = g_openrgb_direct_mode_colors[index].r;
         rgb.g = g_openrgb_direct_mode_colors[index].g;
         rgb.b = g_openrgb_direct_mode_colors[index].b;
         hsv = rgb_to_hsv(rgb);
     }
-    else if (mode == RGB_MATRIX_CUSTOM_OPENRGB_SAVE_DIRECT)
+    else if (mode == RGB_MATRIX_CUSTOM_OPENRGB_SAVE_DIRECT) // Using the saved direct mode LED data
     {
         rgb.r = saved_directrgb[index][0];
         rgb.g = saved_directrgb[index][1];
         rgb.b = saved_directrgb[index][2];
         hsv = rgb_to_hsv(rgb);
     }
-    else
+    else // Using the current effect's LED data
     {
         rgb.r = ws2812_leds[index].r;
         rgb.g = ws2812_leds[index].g;
         rgb.b = ws2812_leds[index].b;
-        if (rgb.r < 1 && rgb.g < 1 && rgb.b < 1)
+        if (rgb.r < 1 && rgb.g < 1 && rgb.b < 1) // At low brightness, RGB values are useless, so fallback to the full keyboard color
             hsv = rgb_matrix_get_hsv();
         else
             hsv = rgb_to_hsv(rgb);
     }
+
+    // Force the key to always be at max brightness
     hsv.v = RGB_MATRIX_MAXIMUM_BRIGHTNESS;
+
+    // Set the indicator color
     rgb = hsv_to_rgb(hsv);
     rgb_matrix_set_color(index, rgb.r, rgb.g, rgb.b);
 }
+
+
+/*==============================
+    rgb_matrix_indicators_user
+
+    Handles status indicator LEDS (Caps lock, Scroll lock, Num lock)
+
+    @return Whether to continue running the keyboard-level callback
+==============================*/
 
 bool rgb_matrix_indicators_user(void)
 {
@@ -370,6 +467,22 @@ bool rgb_matrix_indicators_user(void)
     return true;
 }
 
+
+/*==============================
+    rgb_matrix_indicators_advanced_kb
+
+    Keyboard-level callback, invoked after current animation frame is 
+    rendered but before it is flushed to the LEDs.
+
+    Currently used to limit the LED brightness in direct mode, which
+    bypasses the safety limits that were explicitly set by me to
+    prevent the LEDs from pulling too much current.
+
+    @param  The index of the first LED in this batch.
+    @param  The index of the last LED in this batch.
+    @return Currently unused
+==============================*/
+
 bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max)
 {
     if (!rgb_matrix_indicators_advanced_user(led_min, led_max))
@@ -380,11 +493,11 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max)
     {
         for (uint8_t i=led_min; i<led_max; i++)
         {
-            rgb_t rgb = safe_rgb_brightness(
+            rgb_t rgb = safe_rgb_brightness((rgb_t){
                 g_openrgb_direct_mode_colors[i].r,
                 g_openrgb_direct_mode_colors[i].g,
                 g_openrgb_direct_mode_colors[i].b
-            );
+            });
             rgb_matrix_set_color(i, rgb.r, rgb.g, rgb.b);
         }
     }

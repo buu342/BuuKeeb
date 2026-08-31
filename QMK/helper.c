@@ -1,19 +1,43 @@
 #include QMK_KEYBOARD_H
 #include "helper.h"
 
-rgb_t safe_rgb_brightness(uint8_t r, uint8_t g, uint8_t b)
+/*==============================
+    safe_rgb_brightness
+
+    Direct Mode in OpenRGB purposefully ignores the brightness value
+    defined by the keyboard config. This function is used to push
+    the RGB values down to a safe level so the LEDs don't pull
+    too much current.
+
+    This functionality can be disabled by commenting
+    LIMIT_DIRECTMODE_BRIGHTNESS out in config.h
+
+    @param Input RGB data 
+    @return Safe RGB color values
+==============================*/
+
+rgb_t safe_rgb_brightness(rgb_t rgb)
 {
-    rgb_t rgb = {r, g, b};
     hsv_t hsv = rgb_to_hsv(rgb);
+
+    // Limit brightness
     #ifdef LIMIT_DIRECTMODE_BRIGHTNESS
         hsv.v = (((uint16_t)hsv.v) * RGB_MATRIX_MAXIMUM_BRIGHTNESS) / 255;
     #endif
+
+    // Handle backlight brightness settings
     hsv.v = (((uint16_t)hsv.v) * rgb_matrix_get_val()) / RGB_MATRIX_MAXIMUM_BRIGHTNESS;
+
+    // Convert back to RGB
     return hsv_to_rgb(hsv);
 }
 
 
-/*
+/*==============================
+    rgb_to_hsv
+
+    Converts an RGB value to HSV using the same logic as QMK.    
+
     QMK uses the CIE1931 curve to calculate the HSV values as per our perception.
     The CIE1931 implementation uses a table that was generated via Python code,
     which is available from this (now dead) website (use Web Archive):
@@ -22,6 +46,7 @@ rgb_t safe_rgb_brightness(uint8_t r, uint8_t g, uint8_t b)
     I took that code and inverted the logic. This is the code used to generate
     the inverted table:
 
+    ```
     INPUT_SIZE = 255
     OUTPUT_SIZE = 255
     INT_TYPE = 'const unsigned char'
@@ -67,7 +92,12 @@ rgb_t safe_rgb_brightness(uint8_t r, uint8_t g, uint8_t b)
 
     f.write('\n};\n\n')
     f.close()
-*/
+    ```
+
+    @param The RGB value to convert 
+    @return The converted HSV value
+==============================*/
+
 const unsigned char CIE1931_CURVE_INVERSE[256] PROGMEM = {
     0,   5,   14,  23,  31,  37,  42,  47,  51,  55, 
     58,  62,  65,  68,  71,  73,  76,  78,  81,  83, 
@@ -134,5 +164,6 @@ hsv_t rgb_to_hsv(rgb_t rgb)
     else
         hsv.h = 171 + (((int16_t)rgb.r - rgb.g)*85)/(delta*2);
 
+    // Done
     return hsv;
 }
