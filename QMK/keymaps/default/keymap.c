@@ -3,6 +3,7 @@
 
 #include QMK_KEYBOARD_H
 #include "openrgb.h"
+#include "ws2812.h"
 
 // Comment this define to "overclock" the direct mode LEDs
 // I will not be responsible for wrecked boards!
@@ -256,6 +257,8 @@ static bool keylayer_rgb_val_up(bool activated, void *context)
               Status LED Logic
 *******************************************/
 
+extern ws2812_led_t ws2812_leds[];
+
 static void enable_ledindicator(uint32_t index)
 {
     rgb_t rgb;
@@ -269,7 +272,15 @@ static void enable_ledindicator(uint32_t index)
         hsv = rgb_to_hsv(rgb);
     }
     else
-        hsv = rgb_matrix_get_hsv();
+    {
+        rgb.r = ws2812_leds[index].r;
+        rgb.g = ws2812_leds[index].g;
+        rgb.b = ws2812_leds[index].b;
+        if (rgb.r < 8 && rgb.g < 8 && rgb.b < 8)
+            hsv = rgb_matrix_get_hsv();
+        else
+            hsv = rgb_to_hsv(rgb);
+    }
     hsv.v = RGB_MATRIX_MAXIMUM_BRIGHTNESS;
     rgb = hsv_to_rgb(hsv);
     rgb_matrix_set_color(index, rgb.r, rgb.g, rgb.b);
